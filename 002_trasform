@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Driver : MonoBehaviour
+{
+    private void Start()
+    {  // translate
+      
+    }
+
+    void Update()
+    {
+        //y축만 움직이게 한다.위아래
+        transform.Translate(0, 0.01f, 0);
+
+        //x축으로 움직이게 한다. 좌우
+        transform.Translate(0.01f, 0, 0);
+    }
+
+}
