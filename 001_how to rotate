@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Driver : MonoBehaviour
+{
+    private void Start()
+    {  // 처음부터 z축으로 45도 기울어져있다.
+        transform.Rotate(0, 0, 45);
+    }
+
+    void Update()
+    {
+        //매 프레임마다 z방향으로 0.1f도 움직인다.
+        transform.Rotate(0, 0, 0.1f);
+    }
+
+}
