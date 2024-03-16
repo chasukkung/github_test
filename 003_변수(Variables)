@@ -1,0 +1,19 @@
+//1.float는 소수점 표현. 
+예시 ) float speed = 3.8f;
+뒤에 f를 꼭 붙일것
+
+//2.bool은 옳고 그름을 판별. 옳거나 틀릴때 어떻게 작동해야하는지 명령가능
+예시) bool isAlive = true;
+
+//3.문자열 string은 큰따움표안에 멘트를 써서 표시가 가능하다
+예시) string.myName = "Rick";
+
+//운전대를 잡아서 움직여서 방향조절 변수
+
+flat steerSpeed = 0.1f;
+
+<변수 직렬화 하는 방법>
+
+[SerializeField] 를 앞에 붙여준다
+
+예시 ) 
