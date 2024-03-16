@@ -1,5 +1,6 @@
 horizontal은 좌우상하 방향키를 뜻한다.
 
-float steerAmount = Input.GetAxis("Horizontal");
-transform.Rotate(0, 0, -steerAmount);
-transform.Translate(0, moveSpeed, 0);
+       float steerAmount = Input.GetAxis("Horizontal")*moveSpeed;
+       float moveAmount = Input.GetAxis("Vertical") * moveSpeed;
+       transform.Rotate(0, 0, -steerAmount);
+       transform.Translate(0, moveSpeed, 0);
