@@ -1,0 +1,13 @@
+컴퓨터든 모바일이든 사양상관없이 잘 돌아가게하는것
+
+    {
+      float steerAmount = Input.GetAxis("Horizontal")*steerSpeed* Time.deltaTime;
+      float moveAmount = Input.GetAxis("Vertical") * moveSpeed* Time.deltaTime;
+      transform.Rotate(0, 0, -steerAmount);
+      transform.Translate(0, moveAmount, 0);
+  }
+
+
+인풋쪽에 * Time.deltaTime을 붙이면 끝.
+
+  대신 속도가 바뀌기때문에 재 조율 해야함
