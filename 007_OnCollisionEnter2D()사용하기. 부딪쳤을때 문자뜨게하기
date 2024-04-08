@@ -2,8 +2,15 @@
     {
         Debug.Log("Ouch!");
     }
-}
+
 부딪칠때 아우치!라는 문구가뜬다
 
 플레이어 오브젝트에 이 스크립트를 넣고 플레이 후 어느물체에 부딪치면 ( collider되어있는물체)
 "Ouch!"라는 멘트가 뜬다.
+
+콜라이더 옆에 트리거 체크박스를 체크하면 콜라이더가 적용안되서 지나갈 수 있다. 그리고 트리거에 의해 멘트가 나오게 할 수 있다.
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("What was that?!");
+    }
