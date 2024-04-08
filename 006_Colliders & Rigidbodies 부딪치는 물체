@@ -1,2 +1,6 @@
 collider를 추가하면 움직일때 일부 오브젝트에 충돌을 할 수 있게된다.
 
+add componet 에서 colider를 추가해준다.
+Rigidbodies = 오브젝트 물질의 물성이 있는것으로 취급하게됨
+
+부딪친 물건이 반작용으로 움직이게하는방법 : 부딪치는물건에 rigidbodies를 적용한다.
